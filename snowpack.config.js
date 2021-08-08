@@ -4,14 +4,15 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    src: '/'
+    src: "/",
   },
   plugins: [
     "angular-snowpack-plugin",
-    '@snowpack/plugin-sass'
+    "@snowpack/plugin-sass",
   ],
   packageOptions: {
-    /* ... */
+    source: "remote",
+    types: true,
   },
   devOptions: {
     /* ... */
